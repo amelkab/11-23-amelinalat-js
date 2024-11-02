@@ -6,4 +6,4 @@ console.log(`${x} + ${y}=${x+y}`);
 console.log(`${x} - ${y}=${x-y}`);
 console.log(`${x} * ${y}=${x*y}`);
 console.log(`${x} / ${y}=${x/y}`);
-console.log(x/c)
+console.log(x+z)
