@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/css/style.css">
+  <script src="./public/js/main.js" defer></script>
+  <title>1</title>
+</head>
+
+<body>
+  <header class="header" >
+    <div class="header-inner">
+        <p class="header-text">Just header</p>
+        <div class="nav">
+          <a href="#">Home</a>
+          <a href="#">Search</a>
+          <a href="#">About us</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="burger">
+          <span onclick="burger(event)">
+            <img src="./public/image/Hamburger_icon.svg.png" alt="burger">
+          </span>
+        </div>
+        
+    </div>
+  </header>
+  <main>
+    
+    <div class="profile-inner">
+        <div class="profile">
+            <img src="./public/image/1037781022_662_0_3237_2831_1920x0_80_0_0_6bc55d0c1b8edc8400b3d938c42957b9.jpg" alt="fredurov" class="profile-img">
+            <p>Pavel Durov</p>
+        </div>
+    </div>
+    
+    <div class="modal-btn">
+      <button onclick="openModal()">
+        <p class="">Нажимать сюда!</p>
+      </button>
+    </div>
+
+    <div class="modal-window">
+      <p class="">Вы хотите удалить профиль Павла?</p>
+      <button onclick="closeModal()">Закрыть</button>
+      <button class="remove-btn" onclick="removeFREDUROV()">удалить</button>
+    </div>
+
+  </main>
+</body>
+
+</html>

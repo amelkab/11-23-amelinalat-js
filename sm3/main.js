@@ -1,3 +1,4 @@
+// Тот самый массив 
 const developers = [ 
     { name: 'John', surname: 'Doe', age: 20, talk: () => { console.log('Hello world!') } }, 
     { name: 'Василий', surname: 'Иванов', age: 21 }, 
