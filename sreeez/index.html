@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./main.js" defer></script>
+    <title>Srez</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container header__content">
+          <img src="./img/photo_5208604671080523650_x.jpg" alt="logotype" class="logotype">
+          <h1>MANGO</h1>
+          <nav>
+                <div class="burger" id="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <nav class="menu" id="menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            
+                <script src="script.js"></script>
+
+          </nav>
+        </div>
+      </header>
+      <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="./img/orig.jfif" alt="Слайд 1">
+               
+            </div>
+            <div class="slide">
+                <img src="./img/f58b34761178ffe53d58ee6610ad8897.jpg" alt="Слайд 2">
+              
+            </div>
+            <div class="slide">
+                <img src="./img/_w640_h640_ulichnyj-svetilnik-100vt (13).jpeg" alt="Слайд 3">
+           
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    
+    <script src="script.js"></script>
+
+    <div class="catalog">
+        <div class="product-card">
+            <img src="./img/08a247a81bf1d375ff0e539094700eab.png" alt="Товар 1">
+            <h3>Кресло серое</h3>
+            <p class="price">Цена: 11000 руб.</p>
+            
+        </div>
+        <div class="product-card">
+            <img src="./img/b79f2d302ccbd5e9a5edf567c7246824.jpg" alt="Товар 2">
+            <h3>Шкаф гардеробный</h3>
+            <p class="price">Цена: 15000 руб.</p>
+            
+        </div>
+        <div class="product-card">
+            <img src="./img/0dbf4f6cb8d6360ce87756ea613cd9e8.png" alt="Товар 3">
+            <h3>Стул пластиковый</h3>
+            <p class="price">Цена: 5000 руб.</p>
+        
+        </div>
+        <div class="product-card">
+            <img src="./img/7c6ed80039dcf1696d94f3219b0fecb5.jpg" alt="Товар 4">
+            <h3>Диван</h3>
+            <p class="price">Цена: 25000 руб.</p>
+          
+        </div>
+    </div>
+
+    <section class="about-us">
+        <h2>О нас</h2>
+        <p>Мы — команда профессионалов, стремящихся предоставить нашим клиентам лучшие решения. Наша цель — сделать ваш опыт работы с нами максимально комфортным и эффективным.</p>
+        <img src="./img/806ee30bf6c6f18c5a9edad8beabd2b8.jpg" alt="Товар 4">
+    </section>
+
+    <section class="faq">
+        <h2>Ответы на вопросы</h2>
+        <div class="faq-item">
+            <button class="faq-question">Как выбрать мебель для маленькой комнаты?</button>
+            <div class="faq-answer">
+                <p>Для маленькой комнаты выбирайте компактную и многофункциональную мебель, чтобы не загромождать пространство.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Как ухаживать за деревянной мебелью?</button>
+            <div class="faq-answer">
+                <p>Деревянную мебель следует регулярно протирать сухой или слегка влажной тканью и периодически обрабатывать специальными средствами для ухода.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Предоставляете ли вы доставку?</button>
+            <div class="faq-answer">
+                <p>Да, мы предоставляем услуги доставки по всему городу. Доставка осуществляется в удобное для вас время.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Можно ли вернуть мебель?</button>
+            <div class="faq-answer">
+                <p>Да, вы можете вернуть мебель в течение 14 дней, если она не использовалась и сохранена в оригинальной упаковке.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="./img/photo_5208604671080523650_x.jpg" alt="Логотип" class="footer-logo">
+            <div class="footer-contact">
+                <button class="phone-button" id="phoneButton">
+                    <i class="phone-icon">📞</i> Позвонить
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="phoneModal">
+        <div class="modal-content">
+            <span class="close-button" id="closeButton">&times;</span>
+            <h2>Наш номер телефона:</h2>
+            <p>+7 (123) 456-78-90</p>
+            <a href="tel:+71234567890" class="call-button">Позвонить</a>
+        </div>
+    </div>
+</body>
+</html>
